@@ -4,12 +4,16 @@
   {%- include head.html -%}
 
   <body>
+	  
+    <div class="content">
+	    {% include nav.html %}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+	    <main class="page-content" aria-label="Content">
+		    <div class="wrapper">
+			    {{ content }}
+		    </div>
+	    </main>
+    </div>
 
     {% include envsash.html %}
 
